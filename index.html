@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--====== Title ======-->
     <title>Dr. Barbieri Sargiotti Nicolás</title>
     
@@ -133,6 +133,121 @@
     .back-to-top i{
         margin-top: 16px;
     }
+
+    /**************EFECTOS***************************/
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    } 
+    .zoomInLeft {
+        -webkit-animation-name: zoomInLeft;
+        animation-name: zoomInLeft;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInLeft {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+        opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    }
+    @keyframes zoomInLeft {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    } 
+
+    .zoomInRight {
+        -webkit-animation-name: zoomInRight;
+        animation-name: zoomInRight;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .icon-left{
+        position: absolute;
+        right: 2px;
+        bottom: 10px;
+    }   
+
+    .btn-select-form:hover{
+        position: relative;transition-duration: .3s; 
+        transform: scaleX(1.07);
+        transition-property: transform, -webkit-transform; 
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes zoomInRight {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    }
+
+    @keyframes zoomInRight {
+        0% {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    } 
+
 </style>
 
 <body>
@@ -197,7 +312,7 @@
     
     <!--====== SLIDER PART START ======-->
 
-    <section id="home" class="slider_area">
+    <section id="home" class="slider_area" style="overflow: hidden;">
         <div class="carousel-item active" style="float: none;">
             <div class="container">
                 <div class="row">
@@ -237,45 +352,46 @@
                         </p>
                     </div> <!-- row -->
                 </div>
-            </div> <!-- row -->
-
+            </div> <!-- row --> 
             <div class="row justify-content-center mt-20">
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
+                    <div class="single-features mt-40 mision-sim">
                         <div class="features-title-icon d-flex justify-content-center">
                             <div class="features-icon">
-                                <i class="lni lni-rocket"></i> 
-                                <h3 class="mt-4">MISIÓN </h3>
+                                <i class="lni lni-rocket mision-icon"></i> 
+                                <h3 class="mt-4 mision-titulo">MISIÓN </h3>
                             </div>
                         </div>
                         <div class="features-content">
-                            <p class="text-center">Generar una comunicación<br> estrecha con el cliente,<br> buscando ofrecer un <br>servicio de excelencia con<br> sello de calidad<br> profesional.</p> 
+                            <p class="text-center mision-texto">Generar una comunicación<br> estrecha con el cliente,<br> buscando ofrecer un <br>servicio de excelencia con<br> sello de calidad<br> profesional.</p> 
                         </div>
                     </div> <!-- single features -->
                 </div>
+
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
+                    <div class="single-features mt-40  vision-sim">
                         <div class="features-title-icon d-flex justify-content-center"> 
                             <div class="features-icon">
-                                <i class="lni lni-eye"></i> 
-                                <h3 class="mt-4">VISIÓN</h3>
+                                <i class="lni lni-eye vision-icon"></i> 
+                                <h3 class="mt-4 vision-titulo">VISIÓN</h3>
                             </div>
                         </div>
                         <div class="features-content">
-                            <p class="text-center">Destacar en el ámbito del<br> derecho como un<br> profesional en constante<br> innovación. </p> 
+                            <p class="text-center vision-texto">Destacar en el ámbito del<br> derecho como un<br> profesional en constante<br> innovación. </p> 
                         </div>
                     </div> <!-- single features -->
                 </div>
+
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
+                    <div class="single-features mt-40 valores-sim">
                         <div class="features-title-icon d-flex justify-content-center"> 
                             <div class="features-icon ">
-                                <i class="lni lni-handshake"></i> 
-                                <h3 class="mt-4">VALORES</h3>
+                                <i class="lni lni-handshake  valores-icon"></i> 
+                                <h3 class="mt-4  valores-titulo">VALORES</h3>
                             </div> 
                         </div>
                         <div class="features-content mt-2">
-                            <p class="text-center">Compromiso con el trabajo y el cliente<br>Honestidad<br>Responsabilidad</p> 
+                            <p class="text-center  valores-texto">Compromiso con el trabajo y el cliente<br>Honestidad<br>Responsabilidad</p> 
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -301,13 +417,13 @@
                 <!-- CAROUSEL -->
                 <div class="col-lg-8 col-md-8">
                     <div class="portfolio-menu text-center mt-50 row">
-                        <div class="col-lg-12 col-md-12 p-2">
-                            <img src="assets/images/portfolio/a1.png" alt="" style="width: 100%;">
+                        <div class="col-lg-12 col-md-12 p-2" id="show-gallery">
+                            <img src="assets/images/portfolio/a2.png" alt="" style="width: 100%;">
                         </div> 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" data="1">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" data="1">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span> 
                         </button>
                     </div>  
@@ -315,35 +431,36 @@
                 <!-- GALERIA DE IMAGENES -->
                 <div class="col-lg-4 col-md-4">
                     <div class="portfolio-menu text-center mt-50 row">
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a2.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-1" style="border: 5px solid #87bfbf;">
+                            <img src="assets/images/portfolio/a2.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a3.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-2">
+                            <img src="assets/images/portfolio/a3.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a4.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-3">
+                            <img src="assets/images/portfolio/a4.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a5.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-4">
+                            <img src="assets/images/portfolio/a5.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a6.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-5">
+                            <img src="assets/images/portfolio/a6.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a7.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-6">
+                            <img src="assets/images/portfolio/a7.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a8.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-7">
+                            <img src="assets/images/portfolio/a8.png" alt="" style="width: 100%;">
                         </div> 
-                        <div class="col-lg-6 col-md-6 p-2">
-                            <img src="assets/images/portfolio/a1.png" alt="">
+                        <div class="col-lg-6 col-md-6 p-2" id="img-8" >
+                            <img src="assets/images/portfolio/a1.png" alt="" style="width: 100%;">
                         </div> 
                     </div> <!-- portfolio menu -->
                 </div>
             </div> 
         </div> <!-- container -->
-    </section>
+    </section> 
+
     <!--====== PORTFOLIO PART START ======-->
 
     <section id="portfolio" class="portfolio-area portfolio-four pb-100">
@@ -361,20 +478,21 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="portfolio-menu text-center mt-50">
                         <ul>
-                            <li class="first-e active" data-filter=".branding-4">DERECHO CIVIL</li>
-                            <li class="first-e active" data-filter=".marketing-4">NEGOCIOS E INVERSIONES</li>
-                            <li data-filter=".planning-4">DERECHO INFORMÁTICO</li>
-                            <li data-filter=".research-4">DERECHO SOCIETARIO</li>
-                            <li data-filter=".planning-4">DERECHO NOTARIAL Y REGISTRAL</li>
-                            <li data-filter=".research-4">DERECHO DEL CONSUMIDOR</li>
-                            <li data-filter=".planning-4">DERECHO LABORAL</li> 
+                            <li data-filter=".der-civ" id="first-li">DERECHO CIVIL</li>
+                            <li data-filter=".neg-e-inv-4">NEGOCIOS E INVERSIONES</li>
+                            <li data-filter=".der-inf-4">DERECHO INFORMÁTICO</li>
+                            <li data-filter=".der-soc-4">DERECHO SOCIETARIO</li>
+                            <li data-filter=".der-not-y-reg-4">DERECHO NOTARIAL Y REGISTRAL</li>
+                            <li data-filter=".der-suc-4">DERECHO SUCESORIO</li>
+                            <li data-filter=".der-cons-4">DERECHO DEL CONSUMIDOR</li>
+                            <li data-filter=".der-lab-4">DERECHO LABORAL</li> 
                         </ul>
                     </div> <!-- portfolio menu -->
                 </div>
                 <div class="col-lg-8 col-md-8">
                     <div class="row no-gutters grid mt-50">
-
-                        <div class="col-lg-12 col-sm-12 branding-4 mb-4 row">
+                        <!-- DERECHO CIVIL -->
+                        <div class="col-lg-12 col-sm-12 der-civ mb-4 row">
                             <div class="col-lg-12 col-sm-12 pb-5">
                                 El <span style="color: #5e652c;"><b>derecho civil</b> </span> funciona como regulador de las relaciones humanas. Tanto en el ámbito particular, como en el ámbito de los negocios jurídicos. Convivir en sociedad implica reconocer derechos y obligaciones como sujetos de derecho, por ello, buscamos resolver cualquier inconveniente que deriva del ejercicio y hábito de relaciones humanas.
                             </div>
@@ -383,16 +501,16 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a1.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-1.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/1.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -403,51 +521,30 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a2.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-2.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/1.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="single-portfolio">
-                                        <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a3.png" alt="">
-                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                                <div class="portfolio-content">
-                                                    <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/1.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                    <div class="portfolio-icon">
-                                                        <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
 
                         </div>
-
-                        <div class="col-lg-12 col-sm-12 marketing-4 mb-4 row" >
+                        <!-- NEGOCIOS E INVERSIONES -->
+                        <div class="col-lg-12 col-sm-12 neg-e-inv-4 mb-4 row">
                             
                             <div class="col-lg-12 col-sm-12 pb-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
+                                Orientamos y conectamos las decisiones en materia de inversión. Te ayudamos a crear una cuenta en entidades bancarias o financieras, participar de proyectos de crowfunding financiero. Te explicamos cómo gestionar sus recursos y obtener con ello, la maximización de tus réditos económicos. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
@@ -455,16 +552,16 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a4.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-1.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -475,50 +572,29 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a5.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-2.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="single-portfolio">
-                                        <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a6.png" alt="">
-                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                                <div class="portfolio-content">
-                                                    <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                    <div class="portfolio-icon">
-                                                        <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
-
-                        <div class="col-lg-12 col-sm-12 planning-4 mb-4 row" style="position: absolute; left: 0px; top: 0px; display: none;">
+                        <!-- DERECHO INFORMATICO -->
+                        <div class="col-lg-12 col-sm-12 der-inf-4 mb-4 row">
                             
                             <div class="col-lg-12 col-sm-12 pb-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
+                                Desde la irrupción de internet, las relaciones interpersonales y humanas cambiaron sensiblemente. Los bienes y servicios con los que interactuamos transitan en la “nube” y tienen consecuencias jurídicas. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
@@ -526,16 +602,16 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a8.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-1.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -546,50 +622,29 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a5.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-2.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="single-portfolio">
-                                        <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a2.png" alt="">
-                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                                <div class="portfolio-content">
-                                                    <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                    <div class="portfolio-icon">
-                                                        <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
-
-                        <div class="col-lg-12 col-sm-12 research-4 mb-4 row" style="position: absolute; left: 0px; top: 0px; display: none;">
+                        <!-- DERECHO SOCIETARIO -->
+                        <div class="col-lg-12 col-sm-12 der-soc-4 mb-4 row">
                             
                             <div class="col-lg-12 col-sm-12 pb-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam similique amet ipsum optio, et quasi obcaecati perferendis animi voluptate aliquid omnis ut minima quisquam porro quos nulla sunt suscipit.
+                                Fomentamos la participación de nuestros clientes en el ámbito del derecho societario, velando por sus legítimos intereses a través de una visión dinámica e integral de las empresas. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
@@ -597,16 +652,16 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a2.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -617,45 +672,230 @@
                                 <div class="col-lg-4 col-md-4">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a5.png" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="single-portfolio">
-                                        <div class="portfolio-image">
-                                            <img src="assets/images/portfolio/a8.png" alt="">
-                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
-                                                <div class="portfolio-content">
-                                                    <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/portfolio/2.png"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                    <div class="portfolio-icon">
-                                                        <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
 
                         </div>
+                        <!-- DERECHO NOTARIAL Y REGISTRAL -->
+                        <div class="col-lg-12 col-sm-12 der-not-y-reg-4 mb-4 row">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-5">
+                                Ofrecemos un servicio directo e instantáneo en la regularización de situaciones dominiales, creación de fideicomisos y/o inversiones real estate en la ciudad. 
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-2.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                        <!-- DERECHO SUCESORIO -->
+                        <div class="col-lg-12 col-sm-12 der-suc-4 mb-4 row">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-5">
+                                Acompañamos a nuestros clientes en situaciones que requieran máxima atención y predisposición. Resolvemos sus consultas con empatía y profesionalismo. 
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                        <!-- DERECHO DEL CONSUMIDOR -->
+                        <div class="col-lg-12 col-sm-12 der-cons-4 mb-4 row">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-5">
+                                Asesoramos en cuestiones vinculadas a la normativa de defensa del consumidor ante fueros judiciales y administrativos.  Nuestro servicio también comprende protección en materia de campañas de marca, lealtad comercial, asesoramiento en reclamos por daños punitivos y adaptación de productos y servicios al esquema normativo de venta y comercialización. 
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-2.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                        <!-- DERECHO LABORAL -->
+                        <div class="col-lg-12 col-sm-12 der-lab-4 mb-4 row">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-5">
+                                Velamos por la resolución de conflictos latentes en el ámbito de las relaciones laborales, procurando que ninguna de las partes resulte en desventaja, fomentando que los acuerdos conciliatorios sean el máxime de provecho para ambos intereses.
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
@@ -665,7 +905,7 @@
     <!--====== PORTFOLIO PART ENDS ======-->
      <!--====== CONTACT PART START ======-->
 
-     <section id="contact" class="contact-area">
+     <section id="contact" class="contact-area about-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
@@ -675,15 +915,232 @@
                     </div> <!-- section title -->
                 </div>
             </div> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-wrapper form-style-two pt-115">
-                         
-                        <form id="contact-form" action="assets/contact.php" method="post">
+            <div class="row">    
                             
-                        </form>
-                    </div> <!-- contact wrapper form -->
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45"> 
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card p-2 " style="border:1px solid #5e652c;border-radius: 15px;">
+                                    <div class="card-header" id="headingOne1" style="margin-top: 0px;">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1" class="collapsed" >Deseo realizar una consulta</a>
+                                    </div>
+
+                                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">
+                                        <a class="card-body btn-select-form"  data-tipo="1" data-form="cita" data-titulo="Falta de Registración Laboral" href="#contact" style="position: relative;">
+                                            <h6>Falta de Registración Laboral</h6>
+                                            <p class="text">Trabajo en negro, trabajo informal o no registrado.</p>
+                                            <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                        </a>
+                                        <a class="card-body btn-select-form"  data-tipo="2" data-form="cita" data-titulo="Incorrecta Registración" href="#contact" style="position: relative;"> 
+                                            <h6>Incorrecta Registración</h6>
+                                            <p class="text">Mal consignada la fecha de ingreso, las tareas o jornada laboral.</p>
+                                            <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                        </a>
+                                        <a class="card-body btn-select-form" data-tipo="4" data-form="cita" data-titulo="Despidos Sin Causa" href="#contact" style="position: relative;">
+                                            <h6>Despidos Sin Causa</h6>
+                                            <p class="text">Despido injustificado, despido arbitrario o suspensión por falta de trabajo.</p>
+                                            <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                        </a>
+                                    </div> 
+                                </div>
+                                <div class="card p-2 mt-3" style="border:1px solid #5e652c;border-radius: 15px;">
+                                    <div class="card-header" id="headingOne2" style="margin-top: 0px;">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2" class="collapsed">Deseo solicitar una cita</a>
+                                    </div>
+
+                                    <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Falta de Registración Laboral"  href="#contact" style="position: relative;">
+                                                <h6>Falta de Registración Laboral</h6>
+                                                <p class="text">Trabajo en negro, trabajo informal o no registrado.</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a>
+                                            <a class="card-body btn-select-form"  data-tipo="2" data-form="consultas" data-titulo="Incorrecta Registración" href="#contact" style="position: relative;">
+                                                <h6>Incorrecta Registración</h6>
+                                                <p class="text">Mal consignada la fecha de ingreso, las tareas o jornada laboral.</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a>
+                                            <a class="card-body btn-select-form" data-tipo="4" data-form="consultas" data-titulo="Despidos Sin Causa" href="#contact" style="position: relative;">
+                                                <h6>Despidos Sin Causa</h6>
+                                                <p class="text">Despido injustificado, despido arbitrario o suspensión por falta de trabajo.</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
                 </div>
+
+                <div class="col-lg-7"  id="form_cita" style="display: none;"> 
+                    <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);"> 
+                        <h4 id="titulo_cita"></h4>
+                        <form id="" action="/crear-cita" method="post">
+                            @csrf
+                            <input type="hidden" name="tipo_cita" id="tipo_cita" value="0"> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                                <div class="form-input">
+                                                    <label>Nombre</label>
+                                                    <div class="input-items default">
+                                                        <input name="nombre" type="text" placeholder="nombre">
+                                                        <i class="lni lni-user"></i>
+                                                    </div>
+                                                </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                                <div class="form-input ">
+                                                    <label>Apellido</label>
+                                                    <div class="input-items default">
+                                                        <input name="apellido" type="text" placeholder="apellido">
+                                                        <i class="lni lni-user"></i>
+                                                    </div>
+                                                </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                                <div class="form-input mt-25">
+                                                    <label>Telefono</label>
+                                                    <div class="input-items default">
+                                                        <input name="telefono" type="text" placeholder="telefono">
+                                                        <i class="lni lni-phone"></i>
+                                                    </div>
+                                                </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                                <div class="form-input mt-25">
+                                                    <label>Email</label>
+                                                    <div class="input-items default">
+                                                        <input type="email" name="email" placeholder="Email">
+                                                        <i class="lni lni-envelope"></i>
+                                                    </div>
+                                                </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                                <div class="form-input mt-25">
+                                                    <label>Día</label>
+                                                    <div class="input-items default">
+                                                        <input type="date" name="dia" placeholder="dia" style="padding-right:12px"> 
+                                                    </div>
+                                                </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Hora</label>
+                                        <select class="input-items default" name="hora" id="hora" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
+                                            <option value="14:00">14:00</option>
+                                            <option value="14:30">14:30</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="15:30">15:30</option>
+                                            <option value="16:00">16:00</option>
+                                            <option value="16:30">16:30</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="15:30">15:30</option>
+                                            <option value="16:00">16:00</option>
+                                            <option value="16:30">16:30</option>
+                                            <option value="17:00">17:00</option> 
+                                        </select>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input mt-25">
+                                        <label>Seleccione modalidad de la cita</label>
+                                        <select class="input-items default" name="es_virtual" id="es_virtual" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
+                                            <option value="0">Presencial (ubicación a acordar)</option>
+                                            <option value="1">Cita con modalidad virtual</option> 
+                                        </select>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input mt-25">
+                                        <label>Contanos el motivo de la solicitud</label>
+                                        <div class="input-items default">
+                                            <textarea name="consulta" placeholder="Comience con hola! :)"></textarea>
+                                            <i class="lni lni-pencil-alt"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="form-input light-rounded-buttons mt-30">
+                                        <button class="" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
+                                            Enviar consulta
+                                        </button>
+                                    </div> <!-- form input -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                        
+                    </div> <!-- contact wrapper form -->
+                </div>  
+
+                <div class="col-lg-7" id="form_consulta" style="display: none;">
+                    <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);">  
+                        <h4 id="titulo_consulta"></h4>
+                        <form id="" action="/crear-consulta" method="post">
+                            @csrf
+                            <input type="hidden" name="tipo_consulta" id="tipo_consulta" value="0"> 
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-input">
+                                        <label>Nombre</label>
+                                        <div class="input-items default">
+                                            <input name="nombre" type="text" placeholder="nombre">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-input ">
+                                        <label>Apellido</label>
+                                        <div class="input-items default">
+                                            <input name="apellido" type="text" placeholder="apellido">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Telefono</label>
+                                        <div class="input-items default">
+                                            <input name="telefono" type="text" placeholder="telefono">
+                                            <i class="lni lni-phone"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Email</label>
+                                        <div class="input-items default">
+                                            <input type="email" name="email" placeholder="Email">
+                                            <i class="lni lni-envelope"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div> 
+                                <div class="col-md-12">
+                                    <div class="form-input mt-25">
+                                        <label>Escriba su consulta</label>
+                                        <div class="input-items default">
+                                            <textarea name="consulta" placeholder="Comience con hola! :)"></textarea>
+                                            <i class="lni lni-pencil-alt"></i>
+                                        </div>
+                                    </div> <!-- form input -->
+                                </div>
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="form-input light-rounded-buttons mt-30">
+                                        <button class="" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
+                                            Enviar consulta
+                                        </button>
+                                    </div> <!-- form input -->
+                                </div>
+                            </div> <!-- row -->
+                        </form>
+                        
+                    </div> <!-- contact wrapper form -->
+                </div> 
+
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
@@ -886,19 +1343,134 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <script> 
-        $(document).on('mouseover',".single-features",function(e) {
-            $this:$(".features-title-icon >.features-icon >i").css("color","var(--color-sub-hover)");
-            $this:$(".features-title-icon >.features-icon > h3").css("color","var(--color-sub-hover)");
-            $this:$(".features-content >p").css("color","var(--color-sub-hover)");
+        $(document).on('mouseover',".mision-sim",function(e) {
+            $(".mision-icon").css("color","var(--color-sub-hover)");
+            $(".mision-titulo").css("color","var(--color-sub-hover)");
+            $(".mision-texto").css("color","var(--color-sub-hover)");
         });
 
-        $(document).on('mouseout',".single-features",function(e) {
-            $this:$(".features-title-icon >.features-icon > i").css("color"," var(--color-sub-titulos)");
-            $this:$(".features-title-icon >.features-icon > h3").css("color"," var(--color-sub-titulos)");
-            $this:$(".features-content >p").css("color"," var(--color-sub-titulos)");
+        $(document).on('mouseout',".mision-sim",function(e) {
+            $(".mision-icon").css("color"," var(--color-sub-titulos)");
+            $(".mision-titulo").css("color"," var(--color-sub-titulos)");
+            $(".mision-texto").css("color"," var(--color-sub-titulos)");
+        });  
+
+        $(document).on('mouseover',".vision-sim",function(e) {
+            $(".vision-icon").css("color","var(--color-sub-hover)");
+            $(".vision-titulo").css("color","var(--color-sub-hover)");
+            $(".vision-texto").css("color","var(--color-sub-hover)");
+        });
+
+        $(document).on('mouseout',".vision-sim",function(e) {
+            $(".vision-icon").css("color"," var(--color-sub-titulos)");
+            $(".vision-titulo").css("color"," var(--color-sub-titulos)");
+            $(".vision-texto").css("color"," var(--color-sub-titulos)");
+        });
+
+        $(document).on('mouseover',".valores-sim",function(e) {
+            $(".valores-icon").css("color","var(--color-sub-hover)");
+            $(".valores-titulo").css("color","var(--color-sub-hover)");
+            $(".valores-texto").css("color","var(--color-sub-hover)");
+        });
+
+        $(document).on('mouseout',".valores-sim",function(e) {
+            $(".valores-icon").css("color"," var(--color-sub-titulos)");
+            $(".valores-titulo").css("color"," var(--color-sub-titulos)");
+            $(".valores-texto").css("color"," var(--color-sub-titulos)");
         }); 
 
-        $('.first-e').click();
+        $(document).on('click',".carousel-control-next",function(e) {
+            let id = $(this).attr('data'); 
+            img_select_prev = document.getElementById('img-'+id);
+            img_select_prev.setAttribute('style', ""); 
+
+            id++;
+            if(id == 9){
+                id=1;            
+            }
+
+            img_select = document.getElementById('img-'+id);
+            img_show = document.getElementById('show-gallery');
+            img_show.setAttribute('class','zoomInLeft');
+            img_show.innerHTML = img_select.innerHTML; 
+            
+
+            $(".carousel-control-prev").attr("data",id);
+            $(this).attr("data",id);
+
+            setTimeout(() => {
+                $('#show-gallery').removeClass('zoomInLeft'); 
+                new_img_select = document.getElementById('img-'+id);
+                new_img_select.setAttribute("style","border: 5px solid #87bfbf;");
+            }, 1000);
+        });
+
+        //-----------------------------------------------
+        $(document).on('click',".carousel-control-prev",function(e) {
+            let id = $(this).attr('data'); 
+            img_select_prev = document.getElementById('img-'+id);
+            img_select_prev.setAttribute('style', ""); 
+
+            id--;
+            if(id == 0){
+                id=8;
+            }
+            
+            img_select = document.getElementById('img-'+id);
+            img_show = document.getElementById('show-gallery');
+            img_show.setAttribute('class','zoomInRight');
+            img_show.innerHTML = document.getElementById('img-'+id).innerHTML; 
+            
+                
+            $(this).attr("data",id);
+            $(".carousel-control-next").attr("data",id);
+            setTimeout(() => {
+                $('#show-gallery').removeClass('zoomInRight');
+                new_img_select = document.getElementById('img-'+id);
+                new_img_select.setAttribute("style","border: 5px solid #87bfbf;");
+            }, 1000);
+        });
+    
+        //-----------------------------------------------
+        $( document ).ready(function() { 
+                $('#first-li').siblings('.active').removeClass('active');
+                $('#first-li').addClass('active'); 
+                var $grid = $('.grid').isotope({
+                    // options
+                    transitionDuration: '1s'
+                });
+                $grid.isotope({
+                    filter: '.der-civ'
+                });
+        });
+        
+        //-----------------------------------------------
+        $(document).on('click',".btn-select-form",function(e) {
+            let id_tipo = $(this).attr('data-tipo');  
+            let form = $(this).attr('data-form');  
+            let nombre = $(this).attr('data-titulo'); 
+            if(form == "cita"){
+                document.getElementById('form_cita').setAttribute('style',"");
+                document.getElementById('form_consulta').setAttribute('style',"display:none;");
+                document.getElementById('tipo_cita').value=id_tipo;
+                document.getElementById('titulo_cita').innerHTML=nombre;
+            }else{
+                document.getElementById('form_cita').setAttribute('style',"display:none;");
+                document.getElementById('form_consulta').setAttribute('style',"");
+                document.getElementById('tipo_consulta').value=id_tipo;
+                document.getElementById('titulo_consulta').innerHTML=nombre;
+            }
+
+        });
+
+        function next_carousel(){
+            setTimeout(() => {
+                $('.carousel-control-next').click();
+                next_carousel()
+            }, 5000);
+        }
+
+        next_carousel();
 
     </script>
     <!--====== Jquery js ======-->
