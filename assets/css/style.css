@@ -2330,7 +2330,7 @@ p {
             background-color: transparent;
             color: #fff; }
   .navbar-area.sticky {
-    background-color: #fff;
+    background-color: #9ba377; /*#fff*/
     z-index: 999;
     position: fixed;
     -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
@@ -2339,7 +2339,7 @@ p {
     .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
       background-color: #121212; }
     .navbar-area.sticky .navbar .navbar-nav .nav-item a {
-      color: #121212;
+      color: #fff;/*#121212;*/
       opacity: 0.7; }
       .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
         background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
