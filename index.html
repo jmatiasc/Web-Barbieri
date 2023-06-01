@@ -37,6 +37,12 @@
         --color-sub-titulos: #457273;
         --color-sub-hover: #00A0C6;
         --color-sub-titulos-2:#5e652c;
+    } 
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #121212;
     }
 
     @media (min-width: 992px){
@@ -89,7 +95,15 @@
     .portfolio-menu ul li::before{
         background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);
     }
- 
+    .portfolio-image{
+        height: 145px;
+        overflow: hidden;
+    }
+
+    .portfolio-image img{
+        height: 100%;
+    }
+
     .section-title .sub-title-color{
         color: var(--color-sub-titulos);
     }
@@ -297,7 +311,7 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo" style="">
                             <ul class="navbar-nav">
                                 <li class="nav-item active"><a class="page-scroll" href="#home">Inicio</a></li>
-                                <li class="nav-item"><a class="page-scroll" href="#services">Galería</a></li> 
+                                <li class="nav-item"><a class="page-scroll" href="#gallery">Galería</a></li> 
                                 <li class="nav-item"><a class="page-scroll" href="#contact">Contacto</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#about">Preguntas Frecuentes</a></li>
                             </ul>
@@ -323,7 +337,7 @@
                                 a brindar excelencia jurídica, reflejando <br>nuestro compromiso en la estrategia<br> legal elegida de una manera<br> especializada e innovadora.</b></p>
                             <h6 class="mt-2" style="font-style: italic;color:#ffffff73;font-weight: 200;">Ponemos al derecho en palabras</h6>
                             <ul class="slider-btn rounded-buttons mt-30">
-                                <li><a class="btn rounded-one pl-5 pr-5" href="#" >QUIERO UNA CITA</a></li>
+                                <li><a class="btn rounded-one pl-5 pr-5" href="#contact" >QUIERO UNA CITA</a></li>
                             </ul>
                         </div>
                     </div>
@@ -362,7 +376,7 @@
                                 <h3 class="mt-4 mision-titulo">MISIÓN </h3>
                             </div>
                         </div>
-                        <div class="features-content">
+                        <div class="features-content  mt-2">
                             <p class="text-center mision-texto">Generar una comunicación<br> estrecha con el cliente,<br> buscando ofrecer un <br>servicio de excelencia con<br> sello de calidad<br> profesional.</p> 
                         </div>
                     </div> <!-- single features -->
@@ -376,8 +390,8 @@
                                 <h3 class="mt-4 vision-titulo">VISIÓN</h3>
                             </div>
                         </div>
-                        <div class="features-content">
-                            <p class="text-center vision-texto">Destacar en el ámbito del<br> derecho como un<br> profesional en constante<br> innovación. </p> 
+                        <div class="features-content  mt-2"> 
+                            <p class="text-center vision-texto">Destacar en el ámbito del<br> derecho como un<br>estudio jurídico en constante<br> innovación. </p> 
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -385,7 +399,7 @@
                 <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="single-features mt-40 valores-sim">
                         <div class="features-title-icon d-flex justify-content-center"> 
-                            <div class="features-icon ">
+                            <div class="features-icon">
                                 <i class="lni lni-handshake  valores-icon"></i> 
                                 <h3 class="mt-4  valores-titulo">VALORES</h3>
                             </div> 
@@ -915,17 +929,18 @@
                     </div> <!-- section title -->
                 </div>
             </div> 
-            <div class="row">    
+            <div class="row d-flex justify-content-center">    
                             
                 <div class="col-lg-5">
                     <div class="faq-content mt-45"> 
                         <div class="about-accordion">
                             <div class="accordion" id="accordionExample">
                                 <div class="card p-2 " style="border:1px solid #5e652c;border-radius: 15px;">
+                                    <!-- CITAS -->
                                     <div class="card-header" id="headingOne1" style="margin-top: 0px;">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1" class="collapsed" >Deseo realizar una consulta</a>
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1" class="collapsed" >Deseo solicitar una cita</a>
                                     </div>
-
+                                    <!-- CONSULTAS -->
                                     <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">
                                         <a class="card-body btn-select-form"  data-tipo="1" data-form="cita" data-titulo="Falta de Registración Laboral" href="#contact" style="position: relative;">
                                             <h6>Falta de Registración Laboral</h6>
@@ -946,7 +961,7 @@
                                 </div>
                                 <div class="card p-2 mt-3" style="border:1px solid #5e652c;border-radius: 15px;">
                                     <div class="card-header" id="headingOne2" style="margin-top: 0px;">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2" class="collapsed">Deseo solicitar una cita</a>
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2" class="collapsed">Deseo realizar una consulta</a>
                                     </div>
 
                                     <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample">
@@ -978,7 +993,7 @@
                     <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);"> 
                         <h4 id="titulo_cita"></h4>
                         <form id="" action="/crear-cita" method="post">
-                            @csrf
+                            
                             <input type="hidden" name="tipo_cita" id="tipo_cita" value="0"> 
                             <div class="row">
                                 <div class="col-md-6">
@@ -1079,7 +1094,7 @@
                     <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);">  
                         <h4 id="titulo_consulta"></h4>
                         <form id="" action="/crear-consulta" method="post">
-                            @csrf
+                            
                             <input type="hidden" name="tipo_consulta" id="tipo_consulta" value="0"> 
                             <div class="row">
                                 <div class="col-md-6">
@@ -1245,10 +1260,10 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-contact-info contact-color-1 mt-30" >
                             <div class="contact-info-icon  d-flex justify-content-center" >
-                                <i class="lni lni-map-marker" ></i>
+                                <i class="lni lni-instagram-original" ></i>
                             </div>
                             <div class="contact-info-content media-body mt-2 text-center">
-                                <p class="text" style="color:#697d47"> Dirección 1264,  <br>Adress, Buenos Aires.</p>
+                                <p class="text" style="color:#697d47">@abogadobarbieri</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -1268,7 +1283,7 @@
                                 <i class="lni lni-phone"></i>
                             </div>
                             <div class="contact-info-content media-body mt-2 text-center">
-                                <p class="text" style="color:#697d47">+54 11 358 6194</p> 
+                                <p class="text" style="color:#697d47">(2983) 579935</p> 
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -1288,17 +1303,15 @@
                     <div class="footer-logo text-center">
                         <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
                     </div> <!-- footer logo -->
-                    <ul class="social text-center mt-60">
-                        <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i></a></li>
-                        <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                    <ul class="social text-center mt-60">  
+                        <li><a href="https://www.instagram.com/abogadobarbieri/"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nicol%C3%A1sbarbierisargiotti/"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul> <!-- social -->
-                   <!--  <div class="footer-support text-center">
-                        <span class="number">+8801234567890</span>
-                        <span class="mail">support@uideck.com</span>
+                    <div class="footer-support text-center">
+                        <span class="number">(2983) 579935</span>
+                        <span class="mail">abogadobarbieri@gmail.com</span>
                     </div>
-                    <div class="copyright text-center mt-35">
+                    <!--  <div class="copyright text-center mt-35">
                         <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a rel="nofollow" href="https://ayroui.com">Ayro UI</a> </p>
                     </div>  copyright -->
                 </div>
@@ -1335,7 +1348,7 @@
     <div style="position: fixed; bottom: 100px; right: 0px; z-index: 2147483647; min-width: 100px; box-sizing: content-box; overflow: hidden; min-height: 120px;">
         <div style="position: relative; cursor: pointer;">
             <div style="background: rgb(255, 255, 255); display: flex; justify-content: center; position: absolute; top: 55px; right: 25px; height: 55px; width: 56px; border: 0px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;">
-                <a href="https://api.whatsapp.com/send?phone=541120401008" target="_blank"><img src="assets/images/ws-logo.png" style="width: 100%; height: auto; border-radius: 999px;"></a>
+                <a href="https://api.whatsapp.com/send?phone=5492983579935" target="_blank"><img src="assets/images/ws-logo.png" style="width: 100%; height: auto; border-radius: 999px;"></a>
             </div>
         </div>
         <div style="display: none; height: 450px;"></div>
@@ -1453,12 +1466,12 @@
                 document.getElementById('form_cita').setAttribute('style',"");
                 document.getElementById('form_consulta').setAttribute('style',"display:none;");
                 document.getElementById('tipo_cita').value=id_tipo;
-                document.getElementById('titulo_cita').innerHTML=nombre;
+                document.getElementById('titulo_cita').innerHTML="Cita - " + nombre;
             }else{
                 document.getElementById('form_cita').setAttribute('style',"display:none;");
                 document.getElementById('form_consulta').setAttribute('style',"");
                 document.getElementById('tipo_consulta').value=id_tipo;
-                document.getElementById('titulo_consulta').innerHTML=nombre;
+                document.getElementById('titulo_consulta').innerHTML="Consulta - " + nombre;
             }
 
         });
