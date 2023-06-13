@@ -1754,13 +1754,26 @@
 
                                     <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            @foreach($tipos as $tipo)
-                                            <a class="card-body btn-select-form"  data-tipo="{{$tipo->id}}" data-form="consultas" data-titulo="{{$tipo->nombre}}"  href="#contact" style="position: relative;width:100%;">
-                                                <h6>{{$tipo->nombre}}</h6>
-                                                <p class="text">{{$tipo->detalle}}</p>
+                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Nombre"  href="#contact" style="position: relative;width:100%;">
+                                                <h6>Nombre</h6>
+                                                <p class="text">Especializacion</p>
                                                 <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
                                             </a> 
-                                            @endforeach
+                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Nombre"  href="#contact" style="position: relative;width:100%;">
+                                                <h6>Nombre 2</h6>
+                                                <p class="text">Especializacion 2</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a> 
+                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Nombre"  href="#contact" style="position: relative;width:100%;">
+                                                <h6>Nombre 3</h6>
+                                                <p class="text">Especializacion 3</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a> 
+                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Nombre"  href="#contact" style="position: relative;width:100%;">
+                                                <h6>Nombre 4</h6>
+                                                <p class="text">Especializacion 4</p>
+                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
+                                            </a> 
                                         </div>
                                     </div> 
                                 </div>
@@ -1852,10 +1865,12 @@
                                 <div class="col-md-12">
                                     <div class="form-input mt-25">
                                         <label>Motivo de la cita</label>
-                                        <select class="input-items default" name="tipo_cita" id="tipo_cita" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
-                                            @foreach($tipos as $tipo)                                            
-                                                <option value="{{$tipo->id}}">{{$tipo->nombre}}</option> 
-                                            @endforeach 
+                                        <select class="input-items default" name="tipo_cita" id="tipo_cita" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">                                                                               
+                                                <option value="{{$tipo->id}}">Nombre 1</option> 
+                                                <option value="{{$tipo->id}}">Nombre 2</option>
+                                                <option value="{{$tipo->id}}">Nombre 3</option>
+                                                <option value="{{$tipo->id}}">Nombre 4</option>
+                                                <option value="{{$tipo->id}}">Nombre 5</option>
                                         </select>
                                     </div> <!-- form input -->
                                 </div>
@@ -1885,8 +1900,7 @@
                 <div class="col-lg-7" id="form_consulta" style="display: none;">
                     <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);">  
                         <h4 id="titulo_consulta"></h4>
-                        <form id="" action="/crear-consulta" method="post">
-                            @csrf
+                        <form id="" action="/crear-consulta" method="post"> 
                             <input type="hidden" name="tipo_consulta" id="tipo_consulta" value="0"> 
                             <div class="row">
                                 <div class="col-md-6">
