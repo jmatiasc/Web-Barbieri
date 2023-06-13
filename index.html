@@ -49,6 +49,26 @@
         .navbar-expand-lg .navbar-collapse {
             display: flex;justify-content: right;
         }
+        
+    }
+
+    @media (max-width: 400px){ 
+        .portfolio-galeria{
+            display: none;
+        }
+
+        .portfolio-data{
+            justify-content: center;
+        }
+
+        .portfolio-image{ 
+            margin-top: 5px !important;
+        }
+
+        #content-data-port{
+            margin-left: 30px !important;
+            margin-right: -30px !important;
+        }
     }
     
     .navbar-area .navbar .navbar-nav .nav-item a::before {
@@ -221,7 +241,8 @@
         bottom: 10px;
     }   
 
-    .btn-select-form:hover{
+    .btn-select-form:hover,
+    .btn-select-form-cita:hover{
         position: relative;transition-duration: .3s; 
         transform: scaleX(1.07);
         transition-property: transform, -webkit-transform; 
@@ -298,7 +319,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                        
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="/">
                             <img src="assets/images/logo.svg" alt="Logo">
                         </a>
                         
@@ -444,7 +465,7 @@
                 </div>
                 <!-- GALERIA DE IMAGENES -->
                 <div class="col-lg-4 col-md-4">
-                    <div class="portfolio-menu text-center mt-50 row">
+                    <div class="portfolio-galeria text-center mt-50 row">
                         <div class="col-lg-6 col-md-6 p-2" id="img-1" style="border: 5px solid #87bfbf;">
                             <img src="assets/images/portfolio/a2.png" alt="" style="width: 100%;">
                         </div> 
@@ -500,19 +521,20 @@
                             <li data-filter=".der-suc-4">DERECHO SUCESORIO</li>
                             <li data-filter=".der-cons-4">DERECHO DEL CONSUMIDOR</li>
                             <li data-filter=".der-lab-4">DERECHO LABORAL</li> 
+                            <!-- <li data-filter=".der-prop-inte-4">DERECHO DE PROPIEDAD INTELECTUAL</li>  -->
                         </ul>
                     </div> <!-- portfolio menu -->
                 </div>
                 <div class="col-lg-8 col-md-8">
-                    <div class="row no-gutters grid mt-50">
+                    <div class="row no-gutters grid mt-50" id="content-data-port">
                         <!-- DERECHO CIVIL -->
-                        <div class="col-lg-12 col-sm-12 der-civ mb-4 row">
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                El <span style="color: #5e652c;"><b>derecho civil</b> </span> funciona como regulador de las relaciones humanas. Tanto en el ámbito particular, como en el ámbito de los negocios jurídicos. Convivir en sociedad implica reconocer derechos y obligaciones como sujetos de derecho, por ello, buscamos resolver cualquier inconveniente que deriva del ejercicio y hábito de relaciones humanas.
+                        <div class="col-lg-12 col-sm-12 der-civ mb-4 row" id="portfolio-data">
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                            Tanto en el ámbito particular, como en el ámbito de los negocios jurídicos, el derecho civil funciona como regulador de las relaciones humanas. Convivir en sociedad implica reconocer derechos y obligaciones como sujetos de derecho. 
                             </div>
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-1.jpg" alt="">
@@ -532,7 +554,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Derecho-civil-2.jpg" alt="">
@@ -551,19 +573,99 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/DERECHO-CIVIL.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/DERECHO-CIVIL.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/DERECHO-CIVIL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/DERECHO-CIVIL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-13.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-13.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-19.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-19.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-19.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-CIVIL/Abogado-19.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
 
                         </div>
                         <!-- NEGOCIOS E INVERSIONES -->
-                        <div class="col-lg-12 col-sm-12 neg-e-inv-4 mb-4 row">
+                        <div class="col-lg-12 col-sm-12 neg-e-inv-4 mb-4 row" id="portfolio-data">
                             
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                Orientamos y conectamos las decisiones en materia de inversión. Te ayudamos a crear una cuenta en entidades bancarias o financieras, participar de proyectos de crowfunding financiero. Te explicamos cómo gestionar sus recursos y obtener con ello, la maximización de tus réditos económicos. 
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                                Orientamos y conectamos tus decisiones en materia de inversión. Te ayudamos a crear una cuenta en entidades bancarias o financieras, participar de proyectos de crowfunding financiero, para obtener con ello réditos económicos. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-1.jpg" alt="">
@@ -583,7 +685,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Negocio-e-inversiones-2.jpg" alt="">
@@ -602,18 +704,98 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/NEGOCIOS.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/NEGOCIOS.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/NEGOCIOS.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/NEGOCIOS.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-24.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-24.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-24.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-24.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4  mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-38.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-38.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-38.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-38.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4  mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-48.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-48.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-48.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/NEGOCIOS-E-INVERSIONES/Abogado-48.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                         <!-- DERECHO INFORMATICO -->
-                        <div class="col-lg-12 col-sm-12 der-inf-4 mb-4 row">
+                        <div class="col-lg-12 col-sm-12 der-inf-4 mb-4 row" id="portfolio-data">
                             
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                Desde la irrupción de internet, las relaciones interpersonales y humanas cambiaron sensiblemente. Los bienes y servicios con los que interactuamos transitan en la “nube” y tienen consecuencias jurídicas. 
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                            Desde la irrupción de internet, las relaciones interpersonales y humanas cambiaron sensiblemente. Los bienes y servicios con los que interactuamos transitan en la “nube” y tienen consecuencias jurídicas. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-1.jpg" alt="">
@@ -633,7 +815,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/derecho-informatico-2.jpg" alt="">
@@ -652,18 +834,98 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/DERECHO-INFORMATICO.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/DERECHO-INFORMATICO.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/DERECHO-INFORMATICO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/DERECHO-INFORMATICO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Derecho-Informatico-5.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Derecho-Informatico-5.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Derecho-Informatico-5.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Derecho-Informatico-5.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-51.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-51.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-51.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-51.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-59.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-59.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-59.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-INFORMATICO/Abogado-59.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- DERECHO SOCIETARIO -->
-                        <div class="col-lg-12 col-sm-12 der-soc-4 mb-4 row">
+                        <div class="col-lg-12 col-sm-12 der-soc-4 mb-4 row" id="portfolio-data">
                             
                             <div class="col-lg-12 col-sm-12 pb-5">
-                                Fomentamos la participación de nuestros clientes en el ámbito del derecho societario, velando por sus legítimos intereses a través de una visión dinámica e integral de las empresas. 
+                            Fomentamos la participación de nuestros clientes en el ámbito del derecho societario, velando por sus legítimos intereses a través de una visión dinámica e integral de las empresas. 
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="">
@@ -683,7 +945,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="">
@@ -702,19 +964,99 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-6.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-6.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-6.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-6.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-7.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-7.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-7.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-7.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-8.jpeg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-8.jpeg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-8.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/DERECHO-SOCIETARIO-8.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
 
                         </div>
                         <!-- DERECHO NOTARIAL Y REGISTRAL -->
-                        <div class="col-lg-12 col-sm-12 der-not-y-reg-4 mb-4 row">
+                        <div class="col-lg-12 col-sm-12 der-not-y-reg-4 mb-4 row" id="portfolio-data">
                             
                             <div class="col-lg-12 col-sm-12 pb-5">
-                                Ofrecemos un servicio directo e instantáneo en la regularización de situaciones dominiales, creación de fideicomisos y/o inversiones real estate en la ciudad. 
+                            Ofrecemos un servicio directo e instantáneo en la regularización de situaciones dominiales, creación de fideicomisos y/o inversiones real estate en la ciudad. Asesorate con un profesional.
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-1.jpg" alt="">
@@ -734,7 +1076,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Derecho-Notarial-2.jpg" alt="">
@@ -753,51 +1095,80 @@
                                         </div>
                                     </div>
                                 </div> 
-                            </div>
-
-                        </div>
-                        <!-- DERECHO SUCESORIO -->
-                        <div class="col-lg-12 col-sm-12 der-suc-4 mb-4 row">
-                            
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                Acompañamos a nuestros clientes en situaciones que requieran máxima atención y predisposición. Resolvemos sus consultas con empatía y profesionalismo. 
-                            </div>
-
-                            <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/DERECHO-NOTARIAL-Y-REGISTRAL.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/DERECHO-NOTARIAL-Y-REGISTRAL.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/DERECHO-NOTARIAL-Y-REGISTRAL.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-1.jpg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/DERECHO-NOTARIAL-Y-REGISTRAL.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
-                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-13.jpg" alt="">
                                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                                 <div class="portfolio-content">
                                                     <div class="portfolio-icon">
-                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg"><i class="lni lni-zoom-in"></i></a>
-                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-13.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-13.jpg" alt="shape" class="shape">
                                                     </div>
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
-                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SOCIETARIO/Derecho-societario-2.jpg" alt="shape" class="shape">
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-16.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-16.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-16.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-16.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-24.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-24.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-24.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-NOTARIAL-Y-REGISTRAL/Abogado-24.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -807,16 +1178,147 @@
                             </div>
 
                         </div>
-                        <!-- DERECHO DEL CONSUMIDOR -->
-                        <div class="col-lg-12 col-sm-12 der-cons-4 mb-4 row">
+                        <!-- DERECHO SUCESORIO -->
+                        <div class="col-lg-12 col-sm-12 der-suc-4 mb-4 row" id="portfolio-data">
                             
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                Asesoramos en cuestiones vinculadas a la normativa de defensa del consumidor ante fueros judiciales y administrativos.  Nuestro servicio también comprende protección en materia de campañas de marca, lealtad comercial, asesoramiento en reclamos por daños punitivos y adaptación de productos y servicios al esquema normativo de venta y comercialización. 
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                            Acompañamos a nuestros clientes en situaciones que requieran máxima atención y predisposición. Resolvemos sus consultas con empatía y profesionalismo, asesorándolos en el proceso sucesorio.
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-2.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-8.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-8.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-8.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-8.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4  mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-9.png" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-9.png"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-9.png" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-9.png" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4  mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-10.webp" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-10.webp"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-10.webp" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-SUCESORIO/DERECHO-SUCESORIO-10.webp" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- DERECHO DEL CONSUMIDOR -->
+                        <div class="col-lg-12 col-sm-12 der-cons-4 mb-4 row" id="portfolio-data">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                                Acompañamos a nuestros clientes en situaciones que requieran máxima atención y predisposición. Resolvemos sus consultas con empatía y profesionalismo, asesorándolos en el proceso sucesorio. 
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-1.jpg" alt="">
@@ -836,7 +1338,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Derecho-del-consumidor-2.jpg" alt="">
@@ -855,19 +1357,99 @@
                                         </div>
                                     </div>
                                 </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/DERECHO-DEL-CONSUMIDOR.jpeg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/DERECHO-DEL-CONSUMIDOR.jpeg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/DERECHO-DEL-CONSUMIDOR.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/DERECHO-DEL-CONSUMIDOR.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-11.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-11.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-2.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-2.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-2.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-15.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-15.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-15.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-DEL-CONSUMIDOR/Abogado-15.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
 
                         </div>
                         <!-- DERECHO LABORAL -->
-                        <div class="col-lg-12 col-sm-12 der-lab-4 mb-4 row">
+                        <div class="col-lg-12 col-sm-12 der-lab-4 mb-4 row" id="portfolio-data">
                             
-                            <div class="col-lg-12 col-sm-12 pb-5">
-                                Velamos por la resolución de conflictos latentes en el ámbito de las relaciones laborales, procurando que ninguna de las partes resulte en desventaja, fomentando que los acuerdos conciliatorios sean el máxime de provecho para ambos intereses.
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                            Velamos por la resolución de conflictos latentes en el ámbito de las relaciones laborales, procurando que ninguna de las partes resulte en desventaja, fomentando que los acuerdos conciliatorios sean el máxime de provecho para ambos intereses.
                             </div>
 
                             <div class="col-lg-12 col-sm-12 row">
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="">
@@ -887,7 +1469,7 @@
                                     </div>
                                 </div>
                                 <!------------------------------------------------------------------------>
-                                <div class="col-lg-4 col-md-4">
+                                <div class="col-lg-4 col-md-4 mt-2">
                                     <div class="single-portfolio">
                                         <div class="portfolio-image">
                                             <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="">
@@ -900,6 +1482,217 @@
                                                     <div class="portfolio-icon">
                                                         <a href="#"><i class="lni lni-link"></i></a>
                                                         <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                        <!-- DERECHO DE PROPIEDAD INTELECTUAL -->
+                        <div class="col-lg-12 col-sm-12 der-prop-inte-4 mb-4 row" id="portfolio-data">
+                            
+                            <div class="col-lg-12 col-sm-12 pb-3">
+                                Te asesoramos en el proceso de inscripción y registración de marcas, patentes, obras de autor de todo tipo en los organismos correspondientes, para que tengas garantizada la custodia y explotación comercial de tus inventos.
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12 row">
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-1.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Derecho-laboral-2.jpeg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/DERECHO-LABORAL.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-11.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-13.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!------------------------------------------------------------------------>
+                                <div class="col-lg-4 col-md-4 mt-2">
+                                    <div class="single-portfolio">
+                                        <div class="portfolio-image">
+                                            <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="">
+                                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                                <div class="portfolio-content">
+                                                    <div class="portfolio-icon">
+                                                        <a class="image-popup" href="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg"><i class="lni lni-zoom-in"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="shape" class="shape">
+                                                    </div>
+                                                    <div class="portfolio-icon">
+                                                        <a href="#"><i class="lni lni-link"></i></a>
+                                                        <img src="assets/images/FOTOS-GALERIA-GENERAL/DERECHO-LABORAL/Abogado-27.jpg" alt="shape" class="shape">
                                                     </div>
                                                 </div>
                                             </div>
@@ -940,47 +1733,34 @@
                                     <div class="card-header" id="headingOne1" style="margin-top: 0px;">
                                         <a href="#" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1" class="collapsed" >Deseo solicitar una cita</a>
                                     </div>
-                                    <!-- CONSULTAS -->
-                                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">
-                                        <a class="card-body btn-select-form"  data-tipo="1" data-form="cita" data-titulo="Falta de Registración Laboral" href="#contact" style="position: relative;">
-                                            <h6>Falta de Registración Laboral</h6>
-                                            <p class="text">Trabajo en negro, trabajo informal o no registrado.</p>
+                                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">                                               
+                                        <a class="card-body btn-select-form-cita"  data-tipo="0" data-form="cita" data-titulo="Cita presencial" href="#contact" style="position: relative;width:100%;">
+                                            <h6>Cita presencial</h6>
+                                            <p class="text">Punto de encuentro a acordar</p>
                                             <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
                                         </a>
-                                        <a class="card-body btn-select-form"  data-tipo="2" data-form="cita" data-titulo="Incorrecta Registración" href="#contact" style="position: relative;"> 
-                                            <h6>Incorrecta Registración</h6>
-                                            <p class="text">Mal consignada la fecha de ingreso, las tareas o jornada laboral.</p>
-                                            <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
-                                        </a>
-                                        <a class="card-body btn-select-form" data-tipo="4" data-form="cita" data-titulo="Despidos Sin Causa" href="#contact" style="position: relative;">
-                                            <h6>Despidos Sin Causa</h6>
-                                            <p class="text">Despido injustificado, despido arbitrario o suspensión por falta de trabajo.</p>
+                                        <a class="card-body btn-select-form-cita"  data-tipo="1" data-form="cita" data-titulo="Cita virtual" href="#contact" style="position: relative;width:100%;">
+                                            <h6>Cita virtual</h6>
+                                            <p class="text">Encuentro en plataforma virtual</p>
                                             <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
                                         </a>
                                     </div> 
                                 </div>
                                 <div class="card p-2 mt-3" style="border:1px solid #5e652c;border-radius: 15px;">
+                                    <!-- CONSULTAS -->
                                     <div class="card-header" id="headingOne2" style="margin-top: 0px;">
                                         <a href="#" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2" class="collapsed">Deseo realizar una consulta</a>
                                     </div>
 
                                     <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <a class="card-body btn-select-form"  data-tipo="1" data-form="consultas" data-titulo="Falta de Registración Laboral"  href="#contact" style="position: relative;">
-                                                <h6>Falta de Registración Laboral</h6>
-                                                <p class="text">Trabajo en negro, trabajo informal o no registrado.</p>
+                                            @foreach($tipos as $tipo)
+                                            <a class="card-body btn-select-form"  data-tipo="{{$tipo->id}}" data-form="consultas" data-titulo="{{$tipo->nombre}}"  href="#contact" style="position: relative;width:100%;">
+                                                <h6>{{$tipo->nombre}}</h6>
+                                                <p class="text">{{$tipo->detalle}}</p>
                                                 <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
-                                            </a>
-                                            <a class="card-body btn-select-form"  data-tipo="2" data-form="consultas" data-titulo="Incorrecta Registración" href="#contact" style="position: relative;">
-                                                <h6>Incorrecta Registración</h6>
-                                                <p class="text">Mal consignada la fecha de ingreso, las tareas o jornada laboral.</p>
-                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
-                                            </a>
-                                            <a class="card-body btn-select-form" data-tipo="4" data-form="consultas" data-titulo="Despidos Sin Causa" href="#contact" style="position: relative;">
-                                                <h6>Despidos Sin Causa</h6>
-                                                <p class="text">Despido injustificado, despido arbitrario o suspensión por falta de trabajo.</p>
-                                                <div class="icon-left"><i class="lni lni-chevron-right" style="color: var(--color-sub-titulos);"></i></div>
-                                            </a>
+                                            </a> 
+                                            @endforeach
                                         </div>
                                     </div> 
                                 </div>
@@ -993,57 +1773,67 @@
                     <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);"> 
                         <h4 id="titulo_cita"></h4>
                         <form id="" action="/crear-cita" method="post">
-                            
-                            <input type="hidden" name="tipo_cita" id="tipo_cita" value="0"> 
+                            @csrf
+                            <input type="hidden" name="es_virtual" id="es_virtual" value="0"> 
                             <div class="row">
                                 <div class="col-md-6">
-                                                <div class="form-input">
-                                                    <label>Nombre</label>
-                                                    <div class="input-items default">
-                                                        <input name="nombre" type="text" placeholder="nombre">
-                                                        <i class="lni lni-user"></i>
-                                                    </div>
-                                                </div> <!-- form input -->
+                                    <div class="form-input">
+                                        <label>Nombre</label>
+                                        <div class="input-items default">
+                                            <input name="nombre" type="text" placeholder="nombre">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-6">
-                                                <div class="form-input ">
-                                                    <label>Apellido</label>
-                                                    <div class="input-items default">
-                                                        <input name="apellido" type="text" placeholder="apellido">
-                                                        <i class="lni lni-user"></i>
-                                                    </div>
-                                                </div> <!-- form input -->
+                                    <div class="form-input ">
+                                        <label>Apellido</label>
+                                        <div class="input-items default">
+                                            <input name="apellido" type="text" placeholder="apellido">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-6">
-                                                <div class="form-input mt-25">
-                                                    <label>Telefono</label>
-                                                    <div class="input-items default">
-                                                        <input name="telefono" type="text" placeholder="telefono">
-                                                        <i class="lni lni-phone"></i>
-                                                    </div>
-                                                </div> <!-- form input -->
+                                    <div class="form-input mt-25">
+                                        <label>Telefono</label>
+                                        <div class="input-items default">
+                                            <input name="telefono" type="text" placeholder="telefono">
+                                            <i class="lni lni-phone"></i>
+                                        </div>
+                                    </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-6">
-                                                <div class="form-input mt-25">
-                                                    <label>Email</label>
-                                                    <div class="input-items default">
-                                                        <input type="email" name="email" placeholder="Email">
-                                                        <i class="lni lni-envelope"></i>
-                                                    </div>
-                                                </div> <!-- form input -->
+                                    <div class="form-input mt-25">
+                                        <label>Email</label>
+                                        <div class="input-items default">
+                                            <input type="email" name="email" placeholder="Email">
+                                            <i class="lni lni-envelope"></i>
+                                        </div>
+                                    </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-6">
-                                                <div class="form-input mt-25">
-                                                    <label>Día</label>
-                                                    <div class="input-items default">
-                                                        <input type="date" name="dia" placeholder="dia" style="padding-right:12px"> 
-                                                    </div>
-                                                </div> <!-- form input -->
+                                    <div class="form-input mt-25">
+                                        <label>Día</label>
+                                        <div class="input-items default">
+                                            <input type="date" name="dia" placeholder="dia" style="padding-right:12px"> 
+                                        </div>
+                                    </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-input mt-25">
                                         <label>Hora</label>
                                         <select class="input-items default" name="hora" id="hora" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
+                                            <option value="14:00">09:00</option>
+                                            <option value="14:30">09:30</option>
+                                            <option value="14:00">10:00</option>
+                                            <option value="14:30">10:30</option>
+                                            <option value="14:00">11:00</option>
+                                            <option value="14:30">11:30</option>
+                                            <option value="15:00">12:00</option>
+                                            <option value="15:30">12:30</option>
+                                            <option value="16:00">13:00</option>
+                                            <option value="16:30">13:30</option>
                                             <option value="14:00">14:00</option>
                                             <option value="14:30">14:30</option>
                                             <option value="15:00">15:00</option>
@@ -1055,15 +1845,17 @@
                                             <option value="16:00">16:00</option>
                                             <option value="16:30">16:30</option>
                                             <option value="17:00">17:00</option> 
+                                            <option value="16:30">17:30</option>
                                         </select>
                                     </div> <!-- form input -->
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-input mt-25">
-                                        <label>Seleccione modalidad de la cita</label>
-                                        <select class="input-items default" name="es_virtual" id="es_virtual" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
-                                            <option value="0">Presencial (ubicación a acordar)</option>
-                                            <option value="1">Cita con modalidad virtual</option> 
+                                        <label>Motivo de la cita</label>
+                                        <select class="input-items default" name="tipo_cita" id="tipo_cita" style="border-radius: 5px;padding-left: 12px;padding-right: 44px;width: 100%;height: 44px;color: #7a7a7a;">
+                                            @foreach($tipos as $tipo)                                            
+                                                <option value="{{$tipo->id}}">{{$tipo->nombre}}</option> 
+                                            @endforeach 
                                         </select>
                                     </div> <!-- form input -->
                                 </div>
@@ -1079,7 +1871,7 @@
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
+                                        <button class="btn-enviar" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
                                             Enviar consulta
                                         </button>
                                     </div> <!-- form input -->
@@ -1094,7 +1886,7 @@
                     <div class="contact-wrapper form-style-two mt-45 p-5" style="border:1px solid #5e652c;border-radius: 15px;box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.75);">  
                         <h4 id="titulo_consulta"></h4>
                         <form id="" action="/crear-consulta" method="post">
-                            
+                            @csrf
                             <input type="hidden" name="tipo_consulta" id="tipo_consulta" value="0"> 
                             <div class="row">
                                 <div class="col-md-6">
@@ -1145,7 +1937,7 @@
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
+                                        <button class="btn-enviar" type="submit" style="font-size: 16px;font-weight: 700;color: #ffffff;line-height: 48px; padding: 0 30px; position: relative; transition: all 0.3s ease-out 0s; width: 100%;border-radius: 50px; overflow: hidden; margin-top: 4px;text-transform: uppercase;background: linear-gradient(to right, #9aa277 0%, #8cbabd 100%);border: none;">
                                             Enviar consulta
                                         </button>
                                     </div> <!-- form input -->
@@ -1476,6 +2268,51 @@
 
         });
 
+        //-----------------------------------------------
+        $(document).on('click',".btn-select-form-cita",function(e) {
+            let id_tipo = $(this).attr('data-tipo');  
+            let form = $(this).attr('data-form');  
+            let nombre = $(this).attr('data-titulo'); 
+            if(form == "cita"){
+                document.getElementById('form_cita').setAttribute('style',"");
+                document.getElementById('form_consulta').setAttribute('style',"display:none;");
+                document.getElementById('es_virtual').value=id_tipo;
+                document.getElementById('titulo_cita').innerHTML="Cita - " + nombre;
+            }else{
+                document.getElementById('form_cita').setAttribute('style',"display:none;");
+                document.getElementById('form_consulta').setAttribute('style',"");
+                document.getElementById('tipo_consulta').value=id_tipo;
+                document.getElementById('titulo_consulta').innerHTML="Consulta - " + nombre;
+            }
+
+        });
+
+        //-----------------------------------------------
+        $(document).on('click',".btn-enviar",function(e) {
+            let timerInterval
+            Swal.fire({
+            title: 'Enviando su petición!',
+            html: '',
+            timer: 10000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => { 
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log('I was closed by the timer')
+                }
+            })
+
+        });
+
         function next_carousel(){
             setTimeout(() => {
                 $('.carousel-control-next').click();
@@ -1514,6 +2351,8 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     
+    <!--====== sweetalert2 js ======-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
